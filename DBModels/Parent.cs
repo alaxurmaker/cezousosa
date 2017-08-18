@@ -13,5 +13,6 @@ namespace DBModels
         public string Phone { get; set; }
 
         public int AddressID { get; set; }
+        public int UserID { get; set; }
     }
 }
