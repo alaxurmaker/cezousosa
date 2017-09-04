@@ -16,5 +16,6 @@ namespace DBModels
         public string Type { get; set; }
 
         public virtual ICollection<FinalGrade> FinalGrades { get; set; }
+        public virtual ICollection<StudentHistory> StudentHistories { get; set; }
     }
 }

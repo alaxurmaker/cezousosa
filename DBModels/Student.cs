@@ -19,15 +19,15 @@ namespace DBModels
 
         public int AddressID { get; set; }
         public int UserID { get; set; }
+        public int EducatorID { get; set; }
 
         public virtual Address Address { get; set; }       
         public virtual User User { get; set; }
-        public virtual GroupTimetable GroupTimetable { get; set; }
-        public virtual ICollection<StudentClassroom> StudentClassrooms { get; set; }
-        public virtual ICollection<StudentGrade> StudentGrades { get; set; }
-        public virtual ICollection<StudentGroup> StudentGroups { get; set; }
-        public virtual ICollection<ClassroomTimetable> ClassroomTimetables { get; set; }
+        public virtual Educator Educator { get; set; }
 
+        public virtual ICollection<StudentParent> StudentParents { get; set; }
+        public virtual ICollection<StudentGrade> StudentGrades { get; set; }
+        public virtual ICollection<Group> Groups { get; set; }
 
     }
 }
