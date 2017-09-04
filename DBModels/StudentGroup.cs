@@ -13,5 +13,8 @@ namespace DBModels
         public int StudentID { get; set; }
         public int GroupID { get; set; }
 
+        public virtual Group Group { get; set; }
+        public virtual Student Student { get; set; }
+
     }
 }

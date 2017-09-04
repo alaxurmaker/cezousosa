@@ -14,5 +14,8 @@ namespace DBModels
 
         public int AddressID { get; set; }
         public int UserID { get; set; }
+
+        public virtual Address Address { get; set; }
+        public virtual User User { get; set; }
     }
 }

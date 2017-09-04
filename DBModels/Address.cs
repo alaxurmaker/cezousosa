@@ -14,5 +14,9 @@ namespace DBModels
         public string City { get; set; }
         public string PostalCode { get; set; }
         public string Country { get; set; }
+
+        public virtual ICollection<Parent> Parents { get; set; }
+        public virtual ICollection<Student> Students { get; set; }
+        public virtual ICollection<Teacher> Teachers { get; set; }
     }
 }

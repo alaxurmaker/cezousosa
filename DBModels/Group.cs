@@ -13,7 +13,11 @@ namespace DBModels
         public int Amount { get; set; }
 
         public int TeacherID { get; set; }
-        public int StudentGroupID { get; set; }
         public int SubjectID { get; set; }
+
+        public virtual Teacher Teacher { get; set; }
+        public virtual Subject Subject { get; set; }
+        public virtual ICollection<GroupTimetable> GroupTimetables { get; set; }
+        public virtual ICollection<StudentGroup> StudentGroups { get; set; }
     }
 }

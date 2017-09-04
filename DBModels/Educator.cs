@@ -11,5 +11,8 @@ namespace DBModels
         public int EducatorID { get; set; }
 
         public int TeacherID { get; set; }
+
+        public virtual Teacher Teacher { get; set; }
+        public virtual ICollection<Classroom> Classrooms { get; set; }
     }
 }

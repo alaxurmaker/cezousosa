@@ -14,5 +14,7 @@ namespace DBModels
         public float Wage { get; set; }
 
         public int SubjectID { get; set; }
+
+        public virtual Subject Subject { get; set; }
     }
 }

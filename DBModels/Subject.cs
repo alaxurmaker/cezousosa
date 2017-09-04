@@ -13,5 +13,8 @@ namespace DBModels
         public string Name { get; set; }
         public string Description { get; set; }
 
+        public virtual ICollection<GradeRating> GradeRatings { get; set; }
+        public virtual ICollection<Subject> Subjects { get; set; }
+        public virtual ICollection<StudentGrade> StudentGrades { get; set; }
     }
 }

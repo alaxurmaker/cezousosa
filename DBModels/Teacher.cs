@@ -16,5 +16,7 @@ namespace DBModels
 
         public int AddressID { get; set; }
         public int UserID { get; set; }
+
+        public virtual ICollection<Group> Groups { get; set; }
     }
 }

@@ -16,5 +16,9 @@ namespace DBModels
         public int RoomID { get; set; }
         public int GroupID { get; set; }
 
+        public virtual Room Room { get; set; }
+        public virtual Group Group { get; set; }
+        public virtual ICollection<Student> Students { get; set; }
+
     }
 }

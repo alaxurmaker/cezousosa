@@ -17,5 +17,8 @@ namespace DBModels
 
         public int StudentGradeID { get; set; }
         public int SeasonID { get; set; }
+
+        public virtual StudentGrade StudentGrade { get; set; }
+        public virtual Season Season { get; set; }
     }
 }

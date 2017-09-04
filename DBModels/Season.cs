@@ -14,5 +14,7 @@ namespace DBModels
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
         public string Type { get; set; }
+
+        public virtual ICollection<FinalGrade> FinalGrades { get; set; }
     }
 }
