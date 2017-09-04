@@ -12,5 +12,9 @@ namespace DBModels
 
         public int StudentID { get; set; }
         public int ParentID { get; set; }
+
+        public virtual Parent Parent { get; set; }
+        public virtual Student Student { get; set; }
+        
     }
 }

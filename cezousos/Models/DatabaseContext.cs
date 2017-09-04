@@ -14,6 +14,7 @@ namespace cezousos.Models
             public DatabaseContext()
                 : base("name=DatabaseContext")
             {
+            Database.SetInitializer<DatabaseContext>(new CreateDatabaseIfNotExists<DatabaseContext>());
             }
 
             protected override void OnModelCreating(DbModelBuilder modelBuilder)
@@ -36,6 +37,7 @@ namespace cezousos.Models
             public virtual DbSet<FinalGrade> FinalGrades { get; set; }
             public virtual DbSet<Educator> Educators { get; set; }
             public virtual DbSet<Address> Addresses { get; set; }
+            public virtual DbSet<TeacherSubject> TeacherSubjects { get; set; }
         }
     
 }

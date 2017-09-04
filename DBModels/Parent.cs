@@ -17,7 +17,6 @@ namespace DBModels
 
         public virtual Address Address { get; set; }
         public virtual User User { get; set; }
-
         public virtual ICollection<StudentParent> StudentParents { get; set; }
     }
 }

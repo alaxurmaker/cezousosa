@@ -1,4 +1,6 @@
-﻿using System;
+﻿using cezousos.Models;
+using DBModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,9 +10,16 @@ namespace cezousos.Controllers
 {
     public class HomeController : Controller
     {
+        private DatabaseContext db = new DatabaseContext();
+
         public ActionResult Index()
         {
-            return View();
+            
+           // Room rm = new Room(){Name="abc", Capacity=30, Type="dymy" };
+          //  db.Rooms.Add(rm);
+           // db.SaveChanges();
+
+            return View(db.Rooms.ToList());
         }
 
         public ActionResult About()

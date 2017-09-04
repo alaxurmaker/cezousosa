@@ -17,6 +17,10 @@ namespace DBModels
         public int AddressID { get; set; }
         public int UserID { get; set; }
 
+        public virtual Address Address { get; set; }
+        public virtual User User { get; set; }
         public virtual ICollection<Group> Groups { get; set; }
+        public virtual ICollection<TeacherSubject> TeacherSubjects { get; set; }
+        public virtual ICollection<Educator> Educators { get; set; }
     }
 }
